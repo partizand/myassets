@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗагрузитьССайта" id="16">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьССайта</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьССайтаРасширеннаяПодсказка" id="17"/>
+			</Button>
+			<Button name="ФормаЗагрузить" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаПосчитатьДоходность" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПосчитатьДоходность</CommandName>
+				<ExtendedTooltip name="ФормаПосчитатьДоходностьРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструменты для загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="6"/>
+			<ChildItems>
+				<CheckBoxField name="ЗагружатьАкции" id="7">
+					<DataPath>ЗагружатьАкции</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗагружатьАкцииКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ЗагружатьАкцииРасширеннаяПодсказка" id="9"/>
+				</CheckBoxField>
+				<CheckBoxField name="ЗагружатьОФЗ" id="10">
+					<DataPath>ЗагружатьОФЗ</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗагружатьОФЗКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ЗагружатьОФЗРасширеннаяПодсказка" id="12"/>
+				</CheckBoxField>
+				<CheckBoxField name="ЗагружатьКорпОблигации" id="13">
+					<DataPath>ЗагружатьКорпОблигации</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗагружатьКорпОблигацииКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ЗагружатьКорпОблигацииРасширеннаяПодсказка" id="15"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="НеЗаполнятьДанные" id="64">
+			<DataPath>НеЗаполнятьДанные</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НеЗаполнятьДанныеКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="НеЗаполнятьДанныеРасширеннаяПодсказка" id="66"/>
+		</CheckBoxField>
+		<Pages name="Группа2" id="79">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="80"/>
+			<ChildItems>
+				<Page name="ГруппаДинСписок" id="83">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дин список</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дин список</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДинСписокРасширеннаяПодсказка" id="84"/>
+					<ChildItems>
+						<Table name="ДинСписок" id="85">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ДинСписок</DataPath>
+							<RowPictureDataPath>ДинСписок.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ДинСписокКонтекстноеМеню" id="86"/>
+							<AutoCommandBar name="ДинСписокКоманднаяПанель" id="87"/>
+							<ExtendedTooltip name="ДинСписокРасширеннаяПодсказка" id="88"/>
+							<SearchStringAddition name="ДинСписокСтрокаПоиска" id="89">
+								<AdditionSource>
+									<Item>ДинСписок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДинСписокСтрокаПоискаКонтекстноеМеню" id="90"/>
+								<ExtendedTooltip name="ДинСписокСтрокаПоискаРасширеннаяПодсказка" id="91"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДинСписокСостояниеПросмотра" id="92">
+								<AdditionSource>
+									<Item>ДинСписок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДинСписокСостояниеПросмотраКонтекстноеМеню" id="93"/>
+								<ExtendedTooltip name="ДинСписокСостояниеПросмотраРасширеннаяПодсказка" id="94"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДинСписокУправлениеПоиском" id="95">
+								<AdditionSource>
+									<Item>ДинСписок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДинСписокУправлениеПоискомКонтекстноеМеню" id="96"/>
+								<ExtendedTooltip name="ДинСписокУправлениеПоискомРасширеннаяПодсказка" id="97"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДинСписокКод" id="98">
+									<DataPath>ДинСписок.Код</DataPath>
+									<ContextMenu name="ДинСписокКодКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ДинСписокКодРасширеннаяПодсказка" id="100"/>
+								</LabelField>
+								<LabelField name="ДинСписокНаименование" id="101">
+									<DataPath>ДинСписок.Наименование</DataPath>
+									<ContextMenu name="ДинСписокНаименованиеКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ДинСписокНаименованиеРасширеннаяПодсказка" id="103"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаКупона" id="104">
+									<DataPath>ДинСписок.ДатаКупона</DataPath>
+									<ContextMenu name="ДинСписокДатаКупонаКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ДинСписокДатаКупонаРасширеннаяПодсказка" id="106"/>
+								</LabelField>
+								<LabelField name="ДинСписокРазмерКупона" id="140">
+									<DataPath>ДинСписок.РазмерКупона</DataPath>
+									<ContextMenu name="ДинСписокРазмерКупонаКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="ДинСписокРазмерКупонаРасширеннаяПодсказка" id="142"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПогашения" id="107">
+									<DataPath>ДинСписок.ДатаПогашения</DataPath>
+									<ContextMenu name="ДинСписокДатаПогашенияКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ДинСписокДатаПогашенияРасширеннаяПодсказка" id="109"/>
+								</LabelField>
+								<LabelField name="ДинСписокЦена" id="110">
+									<DataPath>ДинСписок.Цена</DataPath>
+									<ContextMenu name="ДинСписокЦенаКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ДинСписокЦенаРасширеннаяПодсказка" id="112"/>
+								</LabelField>
+								<LabelField name="ДинСписокНКД" id="113">
+									<DataPath>ДинСписок.НКД</DataPath>
+									<ContextMenu name="ДинСписокНКДКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ДинСписокНКДРасширеннаяПодсказка" id="115"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПрошлая" id="116">
+									<DataPath>ДинСписок.ДатаПрошлая</DataPath>
+									<ContextMenu name="ДинСписокДатаПрошлаяКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ДинСписокДатаПрошлаяРасширеннаяПодсказка" id="118"/>
+								</LabelField>
+								<LabelField name="ДинСписокЦенаТекущая" id="119">
+									<DataPath>ДинСписок.ЦенаТекущая</DataPath>
+									<ContextMenu name="ДинСписокЦенаТекущаяКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ДинСписокЦенаТекущаяРасширеннаяПодсказка" id="121"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаТекущая" id="122">
+									<DataPath>ДинСписок.ДатаТекущая</DataPath>
+									<ContextMenu name="ДинСписокДатаТекущаяКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ДинСписокДатаТекущаяРасширеннаяПодсказка" id="124"/>
+								</LabelField>
+								<LabelField name="ДинСписокЦенаОферты" id="125">
+									<DataPath>ДинСписок.ЦенаОферты</DataPath>
+									<ContextMenu name="ДинСписокЦенаОфертыКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="ДинСписокЦенаОфертыРасширеннаяПодсказка" id="127"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаОферты" id="128">
+									<DataPath>ДинСписок.ДатаОферты</DataPath>
+									<ContextMenu name="ДинСписокДатаОфертыКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="ДинСписокДатаОфертыРасширеннаяПодсказка" id="130"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаДоходности" id="131">
+									<DataPath>ДинСписок.ДатаДоходности</DataPath>
+									<ContextMenu name="ДинСписокДатаДоходностиКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ДинСписокДатаДоходностиРасширеннаяПодсказка" id="133"/>
+								</LabelField>
+								<LabelField name="ДинСписокВалютаНоминала" id="134">
+									<DataPath>ДинСписок.ВалютаНоминала</DataPath>
+									<ContextMenu name="ДинСписокВалютаНоминалаКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ДинСписокВалютаНоминалаРасширеннаяПодсказка" id="136"/>
+								</LabelField>
+								<LabelField name="ДинСписокВалютаИнструмента" id="137">
+									<DataPath>ДинСписок.ВалютаИнструмента</DataPath>
+									<ContextMenu name="ДинСписокВалютаИнструментаКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ДинСписокВалютаИнструментаРасширеннаяПодсказка" id="139"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТЗ" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ТЗ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ТЗ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТЗРасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<Table name="СписокБумаг" id="18">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СписокБумаг</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписокБумагКонтекстноеМеню" id="19"/>
+							<AutoCommandBar name="СписокБумагКоманднаяПанель" id="20"/>
+							<ExtendedTooltip name="СписокБумагРасширеннаяПодсказка" id="21"/>
+							<SearchStringAddition name="СписокБумагСтрокаПоиска" id="22">
+								<AdditionSource>
+									<Item>СписокБумаг</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокБумагСтрокаПоискаКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="СписокБумагСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокБумагСостояниеПросмотра" id="25">
+								<AdditionSource>
+									<Item>СписокБумаг</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокБумагСостояниеПросмотраКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="СписокБумагСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокБумагУправлениеПоиском" id="28">
+								<AdditionSource>
+									<Item>СписокБумаг</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокБумагУправлениеПоискомКонтекстноеМеню" id="29"/>
+								<ExtendedTooltip name="СписокБумагУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокБумагНомерСтроки" id="31">
+									<DataPath>Объект.СписокБумаг.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагНомерСтрокиКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="СписокБумагНомерСтрокиРасширеннаяПодсказка" id="33"/>
+								</LabelField>
+								<InputField name="СписокБумагКод" id="34">
+									<DataPath>Объект.СписокБумаг.Код</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагКодКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="СписокБумагКодРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="СписокБумагНаименование" id="37">
+									<DataPath>Объект.СписокБумаг.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагНаименованиеКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="СписокБумагНаименованиеРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="СписокБумагВалютаНоминала" id="73">
+									<DataPath>Объект.СписокБумаг.ВалютаНоминала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагВалютаНоминалаКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="СписокБумагВалютаНоминалаРасширеннаяПодсказка" id="75"/>
+								</InputField>
+								<InputField name="СписокБумагВалютаИнструмента" id="76">
+									<DataPath>Объект.СписокБумаг.ВалютаИнструмента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагВалютаИнструментаКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="СписокБумагВалютаИнструментаРасширеннаяПодсказка" id="78"/>
+								</InputField>
+								<InputField name="СписокБумагДатаКупона" id="70">
+									<DataPath>Объект.СписокБумаг.ДатаКупона</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагДатаКупонаКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="СписокБумагДатаКупонаРасширеннаяПодсказка" id="72"/>
+								</InputField>
+								<InputField name="СписокБумагДатаПогашения" id="67">
+									<DataPath>Объект.СписокБумаг.ДатаПогашения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагДатаПогашенияКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="СписокБумагДатаПогашенияРасширеннаяПодсказка" id="69"/>
+								</InputField>
+								<InputField name="СписокБумагЦена" id="40">
+									<DataPath>Объект.СписокБумаг.Цена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагЦенаКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="СписокБумагЦенаРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="СписокБумагНКД" id="52">
+									<DataPath>Объект.СписокБумаг.НКД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагНКДКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="СписокБумагНКДРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="СписокБумагДатаПрошлая" id="49">
+									<DataPath>Объект.СписокБумаг.ДатаПрошлая</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагДатаПрошлаяКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="СписокБумагДатаПрошлаяРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<InputField name="СписокБумагЦенаТекущая" id="43">
+									<DataPath>Объект.СписокБумаг.ЦенаТекущая</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагЦенаТекущаяКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="СписокБумагЦенаТекущаяРасширеннаяПодсказка" id="45"/>
+								</InputField>
+								<InputField name="СписокБумагДатаТекущая" id="46">
+									<DataPath>Объект.СписокБумаг.ДатаТекущая</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагДатаТекущаяКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="СписокБумагДатаТекущаяРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="СписокБумагЦенаОферты" id="55">
+									<DataPath>Объект.СписокБумаг.ЦенаОферты</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагЦенаОфертыКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="СписокБумагЦенаОфертыРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="СписокБумагДатаДоходности" id="58">
+									<DataPath>Объект.СписокБумаг.ДатаДоходности</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагДатаДоходностиКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="СписокБумагДатаДоходностиРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="СписокБумагДатаОферты" id="61">
+									<DataPath>Объект.СписокБумаг.ДатаОферты</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокБумагДатаОфертыКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="СписокБумагДатаОфертыРасширеннаяПодсказка" id="63"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаЦБ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ЗагружатьОФЗ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать ОФЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЗагружатьКорпОблигации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать корп облигации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЗагружатьАкции" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать акции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НеЗаполнятьДанные" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не заполнять данные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДинСписок" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дин список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийЗагрузкаБумаг.Код КАК Код,
+	РегистрСведенийЗагрузкаБумаг.Наименование КАК Наименование,
+	РегистрСведенийЗагрузкаБумаг.ДатаКупона КАК ДатаКупона,
+	РегистрСведенийЗагрузкаБумаг.ДатаПогашения КАК ДатаПогашения,
+	РегистрСведенийЗагрузкаБумаг.Цена КАК Цена,
+	РегистрСведенийЗагрузкаБумаг.НКД КАК НКД,
+	РегистрСведенийЗагрузкаБумаг.ДатаПрошлая КАК ДатаПрошлая,
+	РегистрСведенийЗагрузкаБумаг.ЦенаТекущая КАК ЦенаТекущая,
+	РегистрСведенийЗагрузкаБумаг.ДатаТекущая КАК ДатаТекущая,
+	РегистрСведенийЗагрузкаБумаг.ЦенаОферты КАК ЦенаОферты,
+	РегистрСведенийЗагрузкаБумаг.ДатаОферты КАК ДатаОферты,
+	РегистрСведенийЗагрузкаБумаг.ДатаДоходности КАК ДатаДоходности,
+	РегистрСведенийЗагрузкаБумаг.ВалютаНоминала КАК ВалютаНоминала,
+	РегистрСведенийЗагрузкаБумаг.ВалютаИнструмента КАК ВалютаИнструмента,
+	РегистрСведенийЗагрузкаБумаг.РазмерКупона КАК РазмерКупона
+ИЗ
+	РегистрСведений.ЗагрузкаБумаг КАК РегистрСведенийЗагрузкаБумаг
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ЦенныеБумаги КАК ЦенныеБумаги
+		ПО РегистрСведенийЗагрузкаБумаг.Код = ЦенныеБумаги.Код</QueryText>
+				<MainTable>Catalog.ЦенныеБумаги</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьИзФайла" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Загрузить</Action>
+		</Command>
+		<Command name="ПосчитатьДоходность" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Посчитать доходность</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Посчитать доходность</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПосчитатьДоходность</Action>
+		</Command>
+		<Command name="ЗагрузитьССайта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить с сайта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить с сайта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьССайта</Action>
+		</Command>
+	</Commands>
+</Form>

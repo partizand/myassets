@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Облигации</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОблигации" id="43">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Облигации</CommandName>
+				<ExtendedTooltip name="ФормаОблигацииРасширеннаяПодсказка" id="44"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="16">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<LabelField name="Код" id="19">
+					<DataPath>Список.Код</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="ТипЦБ" id="22">
+					<DataPath>Список.ТипЦБ</DataPath>
+					<ContextMenu name="ТипЦБКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТипЦБРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="ПогашИлиОферта" id="66">
+					<DataPath>Список.ПогашИлиОферта</DataPath>
+					<ContextMenu name="ПогашИлиОфертаКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ПогашИлиОфертаРасширеннаяПодсказка" id="68"/>
+				</LabelField>
+				<LabelField name="ПериодКупона" id="31">
+					<DataPath>Список.ПериодКупона</DataPath>
+					<ContextMenu name="ПериодКупонаКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ПериодКупонаРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+				<LabelField name="Цена" id="45">
+					<DataPath>Список.Цена</DataPath>
+					<ContextMenu name="ЦенаКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="47"/>
+				</LabelField>
+				<LabelField name="НКД" id="48">
+					<DataPath>Список.НКД</DataPath>
+					<ContextMenu name="НКДКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="НКДРасширеннаяПодсказка" id="50"/>
+				</LabelField>
+				<LabelField name="КПогашению" id="57">
+					<DataPath>Список.КПогашению</DataPath>
+					<ContextMenu name="КПогашениюКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="КПогашениюРасширеннаяПодсказка" id="59"/>
+				</LabelField>
+				<LabelField name="Купонная" id="63">
+					<DataPath>Список.Купонная</DataPath>
+					<ContextMenu name="КупоннаяКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="КупоннаяРасширеннаяПодсказка" id="65"/>
+				</LabelField>
+				<LabelField name="БлижайшийКупон" id="51">
+					<DataPath>Список.БлижайшийКупон</DataPath>
+					<ContextMenu name="БлижайшийКупонКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="БлижайшийКупонРасширеннаяПодсказка" id="53"/>
+				</LabelField>
+				<LabelField name="Купон" id="54">
+					<DataPath>Список.Купон</DataPath>
+					<ContextMenu name="КупонКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="КупонРасширеннаяПодсказка" id="56"/>
+				</LabelField>
+				<LabelField name="ДоходностьНаДату" id="60">
+					<DataPath>Список.ДоходностьНаДату</DataPath>
+					<ContextMenu name="ДоходностьНаДатуКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ДоходностьНаДатуРасширеннаяПодсказка" id="62"/>
+				</LabelField>
+				<LabelField name="БазоваяСтавка" id="37">
+					<DataPath>Список.БазоваяСтавка</DataPath>
+					<ContextMenu name="БазоваяСтавкаКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="БазоваяСтавкаРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+				<LabelField name="ПроцентОтБазовойСтавки" id="40">
+					<DataPath>Список.ПроцентОтБазовойСтавки</DataPath>
+					<ContextMenu name="ПроцентОтБазовойСтавкиКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ПроцентОтБазовойСтавкиРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+				<LabelField name="ДатаПогашения" id="25">
+					<DataPath>Список.ДатаПогашения</DataPath>
+					<ContextMenu name="ДатаПогашенияКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ДатаПогашенияРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникЦенныеБумаги.Ссылка КАК Ссылка,
+	СправочникЦенныеБумаги.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникЦенныеБумаги.Код КАК Код,
+	СправочникЦенныеБумаги.Наименование КАК Наименование,
+	СправочникЦенныеБумаги.ВидЦБ КАК ВидЦБ,
+	СправочникЦенныеБумаги.ТипЦБ КАК ТипЦБ,
+	СправочникЦенныеБумаги.РазмерЛота КАК РазмерЛота,
+	СправочникЦенныеБумаги.ПолноеНаименование КАК ПолноеНаименование,
+	СправочникЦенныеБумаги.Точность КАК Точность,
+	СправочникЦенныеБумаги.ШагЦены КАК ШагЦены,
+	СправочникЦенныеБумаги.ОбъемВыпуска КАК ОбъемВыпуска,
+	СправочникЦенныеБумаги.ДатаПогашения КАК ДатаПогашения,
+	СправочникЦенныеБумаги.ТипКупона КАК ТипКупона,
+	СправочникЦенныеБумаги.ПериодКупона КАК ПериодКупона,
+	СправочникЦенныеБумаги.ОбъемВОбращении КАК ОбъемВОбращении,
+	СправочникЦенныеБумаги.БазоваяСтавка КАК БазоваяСтавка,
+	СправочникЦенныеБумаги.ПроцентОтБазовойСтавки КАК ПроцентОтБазовойСтавки,
+	СправочникЦенныеБумаги.Эмитент КАК Эмитент,
+	СправочникЦенныеБумаги.Предопределенный КАК Предопределенный,
+	СправочникЦенныеБумаги.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	КотировкиСрезПоследних.Цена КАК Цена,
+	КотировкиСрезПоследних.НКД КАК НКД,
+	КупоныОблигацийСрезПервых.Период КАК БлижайшийКупон,
+	КупоныОблигацийСрезПервых.СуммаКупона КАК Купон,
+	ДоходностиОблигацийСрезПоследних.КПогашению КАК КПогашению,
+	ДоходностиОблигацийСрезПоследних.Период КАК ДоходностьНаДату,
+	СведенияОбОблигациях.ДанныеЗаполнены КАК ДанныеЗаполнены,
+	СправочникЦенныеБумаги.Амортизация КАК Амортизация,
+	ДоходностиОблигацийСрезПоследних.Купонная КАК Купонная,
+	ЕСТЬNULL(ОфертыОблигацийСрезПервых.Период, СправочникЦенныеБумаги.ДатаПогашения) КАК ПогашИлиОферта
+ИЗ
+	Справочник.ЦенныеБумаги КАК СправочникЦенныеБумаги
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Котировки.СрезПоследних КАК КотировкиСрезПоследних
+		ПО СправочникЦенныеБумаги.Ссылка = КотировкиСрезПоследних.ЦБ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КупоныОблигаций.СрезПервых КАК КупоныОблигацийСрезПервых
+		ПО СправочникЦенныеБумаги.Ссылка = КупоныОблигацийСрезПервых.ЦБ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ОфертыОблигаций.СрезПервых КАК ОфертыОблигацийСрезПервых
+		ПО СправочникЦенныеБумаги.Ссылка = ОфертыОблигацийСрезПервых.ЦБ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДоходностиОблигаций.СрезПоследних КАК ДоходностиОблигацийСрезПоследних
+		ПО СправочникЦенныеБумаги.Ссылка = ДоходностиОблигацийСрезПоследних.ЦБ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияОбОблигациях КАК СведенияОбОблигациях
+		ПО СправочникЦенныеБумаги.Ссылка = СведенияОбОблигациях.ЦБ</QueryText>
+				<MainTable>Catalog.ЦенныеБумаги</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидЦБ</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыЦБ.Облигация</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Амортизация</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							<dcsset:presentation xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Без амортизации</v8:content>
+								</v8:item>
+							</dcsset:presentation>
+							<dcsset:userSettingID>46e12fd3-b76e-45db-9e11-6ab399106c98</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТипЦБ</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыОблигаций.ОФЗ</dcsset:right>
+								<dcsset:presentation xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>ОФЗ</v8:content>
+									</v8:item>
+								</dcsset:presentation>
+								<dcsset:userSettingID>94599241-517d-4273-94bc-60efe2fcab9b</dcsset:userSettingID>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТипЦБ</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыОблигаций.Муниципальная</dcsset:right>
+								<dcsset:presentation xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Муниципальные</v8:content>
+									</v8:item>
+								</dcsset:presentation>
+								<dcsset:userSettingID>e18d3775-6ddf-4228-a967-cfb1fb044b28</dcsset:userSettingID>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТипЦБ</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыОблигаций.Корпоративная</dcsset:right>
+								<dcsset:presentation xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Корпоративные</v8:content>
+									</v8:item>
+								</dcsset:presentation>
+								<dcsset:userSettingID>284146f3-b393-46bf-a05a-f6bb73b3cfdb</dcsset:userSettingID>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemGroup">
+								<dcsset:groupType>AndGroup</dcsset:groupType>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТипЦБ</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыОблигаций.Корпоративная</dcsset:right>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Эмитент.Рейтинг</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+								</dcsset:item>
+								<dcsset:presentation xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Надежные корпоративные</v8:content>
+									</v8:item>
+								</dcsset:presentation>
+								<dcsset:userSettingID>2e177108-b1d5-4521-8ed5-d058de16331e</dcsset:userSettingID>
+							</dcsset:item>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПогашИлиОферта</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ДанныеЗаполнены</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:AccentColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Амортизация</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:NavigationColor</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ТипКупона</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Облигации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Облигации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Облигации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Облигации</Action>
+		</Command>
+	</Commands>
+</Form>

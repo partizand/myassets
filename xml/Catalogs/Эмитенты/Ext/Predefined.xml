@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.7">
+	<Item id="cea53405-9469-4b12-b854-d834f34cc28d">
+		<Name>МинфинРФ</Name>
+		<Code>000000001</Code>
+		<Description>Минфин РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b87dfac1-b15a-480f-83ed-94782ae6e8f2">
+		<Name>ЦБРФ</Name>
+		<Code>000000002</Code>
+		<Description>ЦБ РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

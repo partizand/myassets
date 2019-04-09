@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.ФондовыйРынок</Subsystem>
+		<Subsystem>ac04e647-5f93-468a-8fa2-66a3ee14c4c7</Subsystem>
+		<Subsystem>3963c031-d159-453c-b02c-5bd18fbd5e01</Subsystem>
+		<Subsystem>Subsystem.НСИ</Subsystem>
+		<Subsystem>Subsystem.Сервис</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Enum uuid="dfd3f9ea-7f1b-4748-a1ac-6749b42af069">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипОферты" category="Ref">
+				<xr:TypeId>ae901ec0-dfe9-41d7-9d81-12cf7b4c323d</xr:TypeId>
+				<xr:ValueId>0b7e6d01-5ed9-4126-b743-c1557539adee</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипОферты" category="Manager">
+				<xr:TypeId>f9957785-429e-448d-ab65-e1182d97e765</xr:TypeId>
+				<xr:ValueId>0c8920b5-80ad-4b31-8969-b77e4f38a63e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипОферты" category="List">
+				<xr:TypeId>9302d96e-892b-4a3a-b016-8639f09296c4</xr:TypeId>
+				<xr:ValueId>d88d007a-c913-4073-b7e9-d1ea4ba25d92</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипОферты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип оферты</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="7478c6dd-a848-4be8-bb0e-dbc09766dea5">
+				<Properties>
+					<Name>БезотзывнаяОферта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Безотзывная оферта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>По требованию владельца</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eb3563a0-56b4-43c6-8ba2-c90dc3112203">
+				<Properties>
+					<Name>CallОферта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Call оферта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>По требованию эмитента</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

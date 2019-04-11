@@ -1,0 +1,8 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.sample-package.org">
+	<property name="report" form="Element"/>
+	<valueType name="Список"/>
+	<objectType name="ТипОбъекта1">
+		<property name="Свойство1" type="xs:string" form="Element"/>
+		<property name="Свойство2" type="xs:date"/>
+	</objectType>
+</package>

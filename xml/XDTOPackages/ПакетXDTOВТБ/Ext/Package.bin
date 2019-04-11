@@ -1,0 +1,354 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="report577p_v1" elementFormQualified="true" attributeFormQualified="false">
+	<property name="Report">
+		<typeDef xsi:type="ObjectType">
+			<property name="Name" type="xs:string" lowerBound="1" form="Attribute"/>
+			<property name="Textbox347" type="xs:string" lowerBound="1" form="Attribute"/>
+			<property name="Textbox3" type="xs:string" lowerBound="1" form="Attribute"/>
+			<property name="Textbox351" type="xs:string" lowerBound="1" form="Attribute"/>
+			<property name="TablixTitul">
+				<typeDef xsi:type="ObjectType">
+					<property name="Textbox290" type="xs:string" lowerBound="1" form="Attribute"/>
+				</typeDef>
+			</property>
+			<property name="Tablix3">
+				<typeDef xsi:type="ObjectType">
+					<property name="client_name1" type="xs:string" lowerBound="1" form="Attribute"/>
+					<property name="client_INN1" type="xs:unsignedLong" lowerBound="1" form="Attribute"/>
+					<property name="agr_num1" type="xs:unsignedInt" lowerBound="1" form="Attribute"/>
+					<property name="agr_type" type="xs:string" lowerBound="1" form="Attribute"/>
+					<property name="Textbox315" type="xs:string" lowerBound="1" form="Attribute"/>
+					<property name="agr_date1" type="xs:dateTime" lowerBound="1" form="Attribute"/>
+					<property name="client_code1" type="xs:unsignedInt" lowerBound="1" form="Attribute"/>
+					<property name="report_date" type="xs:dateTime" lowerBound="1" form="Attribute"/>
+					<property name="Textbox_IIS_date" type="xs:string" lowerBound="1" form="Attribute"/>
+					<property name="IIS_available2" type="xs:decimal" lowerBound="1" form="Attribute"/>
+				</typeDef>
+			</property>
+			<property name="Tablix_h2_acc">
+				<typeDef xsi:type="ObjectType">
+					<property name="Подробности_Collection">
+						<typeDef xsi:type="ObjectType">
+							<property name="Подробности">
+								<typeDef xsi:type="ObjectType">
+									<property name="AccNum" type="xs:string" lowerBound="1" form="Attribute"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tablix_h2_curs" type="xs:anyType"/>
+			<property name="Tablix1">
+				<typeDef xsi:type="ObjectType">
+					<property name="Textbox228" type="xs:anyType"/>
+					<property name="Textbox229" type="xs:anyType"/>
+					<property name="Group1_Collection">
+						<typeDef xsi:type="ObjectType">
+							<property name="Group1">
+								<typeDef xsi:type="ObjectType">
+									<property name="Подробности18_Collection">
+										<typeDef xsi:type="ObjectType">
+											<property name="Подробности18">
+												<typeDef xsi:type="ObjectType">
+													<property name="RemInCurr" type="xs:decimal" lowerBound="1" form="Attribute"/>
+													<property name="Currency" type="xs:string" lowerBound="1" form="Attribute"/>
+													<property name="RemInRUR" type="xs:string" lowerBound="1" form="Attribute"/>
+												</typeDef>
+											</property>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tablix_b1_DDS">
+				<typeDef xsi:type="ObjectType">
+					<property name="Подробности20_Collection">
+						<typeDef xsi:type="ObjectType">
+							<property name="Подробности20" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="Textbox_b1_RemOUT2" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="RemInCurr3" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="Currency3" type="xs:string" lowerBound="1" form="Attribute"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tablix2">
+				<typeDef xsi:type="ObjectType">
+					<property name="Group2_Collection">
+						<typeDef xsi:type="ObjectType">
+							<property name="Group2">
+								<typeDef xsi:type="ObjectType">
+									<property name="Подробности19_Collection">
+										<typeDef xsi:type="ObjectType">
+											<property name="Подробности19">
+												<typeDef xsi:type="ObjectType">
+													<property name="RemInCurr2" type="xs:decimal" lowerBound="1" form="Attribute"/>
+													<property name="Currency2" type="xs:string" lowerBound="1" form="Attribute"/>
+													<property name="RemInRUR2" type="xs:string" lowerBound="1" form="Attribute"/>
+												</typeDef>
+											</property>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tablix_b1_ACTIVE">
+				<typeDef xsi:type="ObjectType">
+					<property name="RemInCurr4" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="ActivPlan" type="xs:decimal" lowerBound="1" form="Attribute"/>
+				</typeDef>
+			</property>
+			<property name="Tablix_b2">
+				<typeDef xsi:type="ObjectType">
+					<property name="S_inpl_2" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="S_inpl_6" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="S_inpl_20" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="S_inpl_all" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="S_inpl_delta" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="S_outpl_2" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="S_outpl_6" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="S_outpl_20" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="S_outpl_all" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="Textbox36" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="Подробности2_Collection">
+						<typeDef xsi:type="ObjectType">
+							<property name="Подробности2">
+								<typeDef xsi:type="ObjectType">
+									<property name="currency_ISO2" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="inpl_2" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="inpl_6" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="Textbox40" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="insum" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="period_delta" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="outpl_2" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="outpl_6" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="outpl_20" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="outsum" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="remplan" type="xs:decimal" lowerBound="1" form="Attribute"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tablix_b3" type="xs:anyType"/>
+			<property name="Tablix_b3_1" type="xs:anyType"/>
+			<property name="ДвижениеДенежныхСредств" localName="Tablix_b4">
+				<typeDef xsi:type="ObjectType">
+					<property name="СписокПлощадок" localName="DDS_place_Collection">
+						<typeDef xsi:type="ObjectType">
+							<property name="Площадка" localName="DDS_place">
+								<typeDef xsi:type="ObjectType">
+									<property name="НазваниеПлощадки" type="xs:string" lowerBound="1" form="Attribute" localName="DDS_place"/>
+									<property name="СписокДвижений" localName="Подробности16_Collection">
+										<typeDef xsi:type="ObjectType">
+											<property name="ДвижениеДенег" upperBound="-1" localName="Подробности16">
+												<typeDef xsi:type="ObjectType">
+													<property name="Дата" type="xs:dateTime" lowerBound="1" form="Attribute" localName="debt_type4"/>
+													<property name="Сумма" type="xs:decimal" lowerBound="1" form="Attribute" localName="debt_date4"/>
+													<property name="Валюта" type="xs:string" lowerBound="1" form="Attribute" localName="decree_amount2"/>
+													<property name="ТипОперации" type="xs:string" lowerBound="1" form="Attribute" localName="operation_type"/>
+													<property name="Комментарий" type="xs:string" lowerBound="1" form="Attribute" localName="notes1"/>
+												</typeDef>
+											</property>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tablix6">
+				<typeDef xsi:type="ObjectType">
+					<property name="Textbox689" type="xs:anyType"/>
+					<property name="Textbox391">
+						<typeDef xsi:type="ObjectType">
+							<property name="Textbox389">
+								<typeDef xsi:type="ObjectType">
+									<property name="Textbox376" type="xs:string" lowerBound="1" form="Attribute"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+					<property name="bond_type_Collection">
+						<typeDef xsi:type="ObjectType">
+							<property name="bond_type" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="bond_type1">
+										<typeDef xsi:type="ObjectType">
+											<property name="bond_type1" type="xs:string" lowerBound="1" form="Attribute"/>
+										</typeDef>
+									</property>
+									<property name="FinInstr_Collection">
+										<typeDef xsi:type="ObjectType">
+											<property name="FinInstr" upperBound="-1">
+												<typeDef xsi:type="ObjectType">
+													<property name="FinInstr" type="xs:string" lowerBound="1" form="Attribute"/>
+													<property name="deal_place_Collection">
+														<typeDef xsi:type="ObjectType">
+															<property name="deal_place">
+																<typeDef xsi:type="ObjectType">
+																	<property name="deal_place" type="xs:string" lowerBound="1" form="Attribute"/>
+																	<property name="Подробности21_Collection">
+																		<typeDef xsi:type="ObjectType">
+																			<property name="Подробности21">
+																				<typeDef xsi:type="ObjectType">
+																					<property name="remains_in" type="xs:decimal" lowerBound="1" form="Attribute"/>
+																					<property name="delta" type="xs:decimal" lowerBound="1" form="Attribute"/>
+																					<property name="remains_out" type="xs:decimal" lowerBound="1" form="Attribute"/>
+																					<property name="remains_plan" type="xs:decimal" lowerBound="1" form="Attribute"/>
+																					<property name="currency_ISO" type="xs:string" lowerBound="1" form="Attribute"/>
+																					<property name="bond_price1" type="xs:decimal" lowerBound="1" form="Attribute"/>
+																					<property name="nkd_nominal1" type="xs:decimal" lowerBound="1" form="Attribute"/>
+																					<property name="remainsout_nmn1" type="xs:decimal" lowerBound="1" form="Attribute"/>
+																					<property name="remainsout_rub" type="xs:decimal" lowerBound="1" form="Attribute"/>
+																					<property name="remainsplan_rub" type="xs:decimal" lowerBound="1" form="Attribute"/>
+																				</typeDef>
+																			</property>
+																		</typeDef>
+																	</property>
+																</typeDef>
+															</property>
+														</typeDef>
+													</property>
+													<property name="Textbox432">
+														<typeDef xsi:type="ObjectType">
+															<property name="Textbox433" type="xs:decimal" lowerBound="1" form="Attribute"/>
+															<property name="Textbox435" type="xs:decimal" lowerBound="1" form="Attribute"/>
+															<property name="Textbox436" type="xs:decimal" lowerBound="1" form="Attribute"/>
+															<property name="Textbox443" type="xs:decimal" lowerBound="1" form="Attribute"/>
+															<property name="Textbox444" type="xs:decimal" lowerBound="1" form="Attribute"/>
+														</typeDef>
+													</property>
+												</typeDef>
+											</property>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+					<property name="Textbox396">
+						<typeDef xsi:type="ObjectType">
+							<property name="Textbox401">
+								<typeDef xsi:type="ObjectType">
+									<property name="Textbox412" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="Textbox413" type="xs:decimal" lowerBound="1" form="Attribute"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tablix_b6">
+				<typeDef xsi:type="ObjectType">
+					<property name="Подробности17_Collection">
+						<typeDef xsi:type="ObjectType">
+							<property name="Подробности17" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="NameBeg15" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="curs_datebeg15" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="currency_ISO16" type="xs:dateTime" lowerBound="1" form="Attribute"/>
+									<property name="NameEnd15" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="deal_count13" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="deal_price13" type="xs:string" lowerBound="1" form="Attribute"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tablix_b7" type="xs:anyType"/>
+			<property name="Tablix8">
+				<typeDef xsi:type="ObjectType">
+					<property name="Textbox234" type="xs:decimal" lowerBound="1" form="Attribute"/>
+					<property name="Textbox235" type="xs:decimal" lowerBound="1" form="Attribute"/>
+				</typeDef>
+			</property>
+			<property name="Tablix_b8" type="xs:anyType"/>
+			<property name="Tablix_b9">
+				<typeDef xsi:type="ObjectType">
+					<property name="Textbox245" type="xs:string" lowerBound="1" form="Attribute"/>
+					<property name="Подробности9_Collection">
+						<typeDef xsi:type="ObjectType">
+							<property name="Сделка" upperBound="-1" localName="Подробности9">
+								<typeDef xsi:type="ObjectType">
+									<property name="ИмяИнструмента" type="xs:string" lowerBound="1" form="Attribute" localName="NameBeg9"/>
+									<property name="curs_datebeg9" type="xs:dateTime" lowerBound="1" form="Attribute"/>
+									<property name="currency_ISO9" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="Количество" type="xs:decimal" lowerBound="1" form="Attribute" localName="NameEnd9"/>
+									<property name="deal_count7" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="Цена" type="xs:decimal" lowerBound="1" form="Attribute" localName="deal_price7"/>
+									<property name="currency_price7" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="currency_paym7" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="deal_cost7" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="bank_сommition7" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="deal_code5" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="deliv_date6" type="xs:dateTime" lowerBound="1" form="Attribute"/>
+									<property name="paym_date5" type="xs:dateTime" lowerBound="1" form="Attribute"/>
+									<property name="request_number" type="xs:unsignedLong" lowerBound="1" form="Attribute"/>
+									<property name="deal_code1" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="uds_befor" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="contr_name5" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="deal_place7" type="xs:string" lowerBound="1" form="Attribute"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tablix_b10" type="xs:anyType"/>
+			<property name="ЗавершенныеСделки" localName="Tablix_b11">
+				<typeDef xsi:type="ObjectType">
+					<property name="Textbox210" type="xs:string" lowerBound="1" form="Attribute"/>
+					<property name="СписокСделок" localName="Подробности10_Collection">
+						<typeDef xsi:type="ObjectType">
+							<property name="Сделка" upperBound="-1" localName="Подробности10">
+								<typeDef xsi:type="ObjectType">
+									<property name="Инструмент" type="xs:string" lowerBound="1" form="Attribute" localName="NameBeg10"/>
+									<property name="ДатаСделки" type="xs:dateTime" lowerBound="1" form="Attribute" localName="curs_datebeg10"/>
+									<property xmlns:d10p1="report577p_v1" name="ТипСделки" type="d10p1:НаправлениеСделки" lowerBound="1" form="Attribute" localName="currency_ISO10"/>
+									<property name="Количество" type="xs:decimal" lowerBound="1" form="Attribute" localName="NameEnd10"/>
+									<property name="ВалютаЦены" type="xs:string" lowerBound="1" form="Attribute" localName="deal_count8"/>
+									<property name="Цена" type="xs:decimal" lowerBound="1" form="Attribute" localName="deal_price8"/>
+									<property name="ВалютаРасчетов" type="xs:string" lowerBound="1" form="Attribute" localName="currency_price8"/>
+									<property name="СуммаСделки" type="xs:decimal" lowerBound="1" form="Attribute" localName="currency_paym8"/>
+									<property name="НКД" type="xs:decimal" lowerBound="1" form="Attribute" localName="deal_cost8"/>
+									<property name="КомиссияЗаРасчет" type="xs:decimal" lowerBound="1" form="Attribute" localName="bank_сommition8"/>
+									<property name="КомиссияЗаЗаключение" type="xs:decimal" lowerBound="1" form="Attribute" localName="deal_code6"/>
+									<property name="ДатаПоставки" type="xs:dateTime" lowerBound="1" form="Attribute" localName="deliv_date7"/>
+									<property name="ДатаОплаты" type="xs:dateTime" lowerBound="1" form="Attribute" localName="paym_date6"/>
+									<property name="НомерЗаявки" type="xs:string" lowerBound="1" form="Attribute" localName="request_number2"/>
+									<property name="НомерСделки" type="xs:string" lowerBound="1" form="Attribute" localName="deal_code7"/>
+									<property name="uds_befor2" type="xs:decimal" lowerBound="1" form="Attribute"/>
+									<property name="contr_name6" type="xs:string" lowerBound="1" form="Attribute"/>
+									<property name="deal_place8" type="xs:string" lowerBound="1" form="Attribute"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tablix_b12" type="xs:anyType"/>
+			<property name="Tablix_b13" type="xs:anyType"/>
+			<property name="Tablix_b14" type="xs:anyType"/>
+			<property name="Tablix_b15" type="xs:anyType"/>
+			<property name="Tablix_b16" type="xs:anyType"/>
+			<property name="Tablix_b17" type="xs:anyType"/>
+		</typeDef>
+	</property>
+	<valueType name="НаправлениеСделки" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Покупка</enumeration>
+		<enumeration xsi:type="xs:string">Продажа</enumeration>
+	</valueType>
+</package>

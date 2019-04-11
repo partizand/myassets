@@ -149,7 +149,11 @@
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ЗагрузкаДанных</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
+			<XDTOPackage>ПакетXDTO1</XDTOPackage>
+			<XDTOPackage>ПакетXDTO3</XDTOPackage>
+			<XDTOPackage>ПакетXDTOВТБ</XDTOPackage>
 			<CommonCommand>Облигации</CommonCommand>
+			<Constant>КоличествоЗаписейВПорцииЗагрузки</Constant>
 			<Catalog>ЦенныеБумаги</Catalog>
 			<Catalog>Эмитенты</Catalog>
 			<Catalog>Валюты</Catalog>
@@ -163,19 +167,22 @@
 			<Document>ПогашениеОблигаций</Document>
 			<Document>ВыплатаДивидендов</Document>
 			<Document>ВыплатаКупона</Document>
+			<Sequence>ПоследовательностьДляЗагрузки</Sequence>
 			<Enum>ТипыОблигаций</Enum>
 			<Enum>ТипыАкций</Enum>
 			<Enum>ВидыЦБ</Enum>
 			<Enum>ТипыКупонов</Enum>
 			<Enum>ВидыБазовыхСтавок</Enum>
 			<Enum>ТипОферты</Enum>
-			<Enum>ВидыСделок</Enum>
+			<Enum>НаправлениеСделки</Enum>
 			<Report>ДоходностиОФЗПД</Report>
 			<Report>ОФЗПеременныйКупон</Report>
 			<Report>ПортфельЦенныхБумаг</Report>
 			<Report>РеестрСделок</Report>
 			<DataProcessor>ЗагрузкаЦБ</DataProcessor>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
+			<DataProcessor>ЗагрузкаОтчетаВТБ</DataProcessor>
+			<DataProcessor>ВыгрузкаЗагрузкаДанныхXML</DataProcessor>
 			<InformationRegister>Котировки</InformationRegister>
 			<InformationRegister>КупоныОблигаций</InformationRegister>
 			<InformationRegister>ДоходностиОблигаций</InformationRegister>

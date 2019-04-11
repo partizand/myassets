@@ -20,10 +20,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ПортфельЦенныхБумаг</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаЦБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.РеестрСделок</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">cee4cfbc-3bc1-4326-ad30-bad3531320f9</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">55696d64-b836-4f77-8cd9-b7426981b314</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Продажи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НалогСКупона</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаОтчетаВТБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Sequence.ПоследовательностьДляЗагрузки</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

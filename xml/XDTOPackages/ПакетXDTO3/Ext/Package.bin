@@ -1,0 +1,37 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.microsoft-demo-liquid.com" elementFormQualified="true" attributeFormQualified="false">
+	<property name="PurchaseOrder" form="Element">
+		<typeDef xsi:type="ObjectType" open="true" ordered="false">
+			<property name="PurchaseOrderNumber" type="xs:unsignedInt" lowerBound="1" form="Attribute"/>
+			<property name="OrderDate" type="xs:dateTime" lowerBound="1" form="Attribute"/>
+			<property name="Address" lowerBound="0" upperBound="-1" nillable="true" form="Element">
+				<typeDef xsi:type="ObjectType">
+					<property name="Type" type="xs:string" lowerBound="1" nillable="false" form="Attribute"/>
+					<property name="Name" type="xs:string"/>
+					<property name="Street" type="xs:string"/>
+					<property name="City" type="xs:string"/>
+					<property name="State" type="xs:string"/>
+					<property name="Zip" type="xs:unsignedInt"/>
+					<property name="Country" type="xs:string"/>
+				</typeDef>
+			</property>
+			<property name="DeliveryNotes" type="xs:string" lowerBound="0" upperBound="1"/>
+			<property name="Items">
+				<typeDef xsi:type="ObjectType">
+					<property name="Item" upperBound="-1">
+						<typeDef xsi:type="ObjectType">
+							<property name="PartNumber" type="xs:string" lowerBound="1" form="Attribute"/>
+							<property name="ProductName" type="xs:string"/>
+							<property name="Quantity" type="xs:unsignedByte"/>
+							<property name="USPrice" type="xs:decimal"/>
+							<property name="ShipDate" type="xs:date" lowerBound="0"/>
+							<property name="Comment" type="xs:string" lowerBound="0"/>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+		</typeDef>
+	</property>
+	<objectType name="Type_Purchase" open="true">
+		<property name="OrderDate" type="xs:date" form="Attribute"/>
+	</objectType>
+</package>

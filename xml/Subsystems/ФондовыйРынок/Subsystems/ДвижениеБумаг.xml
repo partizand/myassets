@@ -18,7 +18,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПокупкаЦеннойБумаги</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаЦеннойБумаги</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПогашениеОблигаций</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">cabd21b4-9414-4b6b-9189-08ae81c6a9cd</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

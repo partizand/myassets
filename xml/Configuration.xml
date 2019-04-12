@@ -151,7 +151,7 @@
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
 			<XDTOPackage>ПакетXDTO1</XDTOPackage>
 			<XDTOPackage>ПакетXDTO3</XDTOPackage>
-			<XDTOPackage>ПакетXDTOВТБ</XDTOPackage>
+			<XDTOPackage>ПакетXDTOОтчетВТБ</XDTOPackage>
 			<CommonCommand>Облигации</CommonCommand>
 			<Constant>КоличествоЗаписейВПорцииЗагрузки</Constant>
 			<Catalog>ЦенныеБумаги</Catalog>
@@ -167,7 +167,7 @@
 			<Document>ПогашениеОблигаций</Document>
 			<Document>ВыплатаДивидендов</Document>
 			<Document>ВыплатаКупона</Document>
-			<Sequence>ПоследовательностьДляЗагрузки</Sequence>
+			<Sequence>ЗагрузкаОтчетов</Sequence>
 			<Enum>ТипыОблигаций</Enum>
 			<Enum>ТипыАкций</Enum>
 			<Enum>ВидыЦБ</Enum>

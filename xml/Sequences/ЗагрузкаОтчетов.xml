@@ -2,25 +2,25 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
 	<Sequence uuid="06caf792-4fa8-4ff1-8301-9b57226f7ddf">
 		<InternalInfo>
-			<xr:GeneratedType name="SequenceRecord.ПоследовательностьДляЗагрузки" category="Record">
+			<xr:GeneratedType name="SequenceRecord.ЗагрузкаОтчетов" category="Record">
 				<xr:TypeId>f8401f8a-8d94-4183-803f-bc0f4d4e4ce2</xr:TypeId>
 				<xr:ValueId>edf41b15-47b4-4bc5-bc54-4af6815becbb</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="SequenceManager.ПоследовательностьДляЗагрузки" category="Manager">
+			<xr:GeneratedType name="SequenceManager.ЗагрузкаОтчетов" category="Manager">
 				<xr:TypeId>44c12f4a-2efb-4129-bf21-5b7b8d8828c7</xr:TypeId>
 				<xr:ValueId>cd4a30bc-be85-4177-8871-9b6489435c6d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="SequenceRecordSet.ПоследовательностьДляЗагрузки" category="RecordSet">
+			<xr:GeneratedType name="SequenceRecordSet.ЗагрузкаОтчетов" category="RecordSet">
 				<xr:TypeId>5916371f-787c-4982-8131-9a8cec54907e</xr:TypeId>
 				<xr:ValueId>91cd2dea-ff59-4203-80ad-88ad09e2cf85</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ПоследовательностьДляЗагрузки</Name>
+			<Name>ЗагрузкаОтчетов</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Последовательность для загрузки</v8:content>
+					<v8:content>Загрузка отчетов</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -30,10 +30,35 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаЦеннойБумаги</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенежныхСредств</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ДепозитарнаяКомиссия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыводДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПогашениеОблигаций</xr:Item>
 			</Documents>
 			<RegisterRecords/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Dimension uuid="395be552-0821-4aa4-b488-0022285cb9eb">
+				<Properties>
+					<Name>БрокерскийСчет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Брокерский счет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.БрокерскиеСчета</v8:Type>
+					</Type>
+					<DocumentMap>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПокупкаЦеннойБумаги.Attribute.БрокерскийСчет</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаЦеннойБумаги.Attribute.БрокерскийСчет</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенежныхСредств.Attribute.БрокерскийСчет</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВыводДенежныхСредств.Attribute.БрокерскийСчет</xr:Item>
+					</DocumentMap>
+					<RegisterRecordsMap/>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
 	</Sequence>
 </MetaDataObject>

@@ -23,7 +23,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Продажи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НалогСКупона</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаОтчетаВТБ</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Sequence.ПоследовательностьДляЗагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Sequence.ЗагрузкаОтчетов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

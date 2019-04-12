@@ -7,7 +7,7 @@
 			<property name="Textbox351" type="xs:string" lowerBound="1" form="Attribute"/>
 			<property name="TablixTitul">
 				<typeDef xsi:type="ObjectType">
-					<property name="Textbox290" type="xs:string" lowerBound="1" form="Attribute"/>
+					<property name="ТекстЗаголовокОтчета" type="xs:string" lowerBound="1" form="Attribute" localName="Textbox290"/>
 				</typeDef>
 			</property>
 			<property name="Tablix3">
@@ -351,4 +351,31 @@
 		<enumeration xsi:type="xs:string">Покупка</enumeration>
 		<enumeration xsi:type="xs:string">Продажа</enumeration>
 	</valueType>
+	<valueType name="ТипОперацииДвиженияДенег" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Вознаграждение Брокера</enumeration>
+		<enumeration xsi:type="xs:string">Зачисление денежных средств</enumeration>
+		<enumeration xsi:type="xs:string">Сальдо расчётов по сделкам с ценными бумагами</enumeration>
+		<enumeration xsi:type="xs:string">Вознаграждение Депозитария</enumeration>
+	</valueType>
+	<objectType name="ТипОтчет" open="true">
+		<property xmlns:d3p1="report577p_v1" name="ЗаголовокОтчета" type="d3p1:ТипЗаголовокОтчета" localName="TablixTitul"/>
+		<property xmlns:d3p1="report577p_v1" name="ДанныеСчета" type="d3p1:ТипДанныеСчета" localName="Tablix3"/>
+	</objectType>
+	<objectType name="ТипЗаголовокОтчета" open="true">
+		<property name="ТекстЗаголовка" type="xs:string" form="Attribute" localName="Textbox290"/>
+	</objectType>
+	<objectType name="ТипДанныеСчета" open="true">
+		<property name="НомерСоглашения" type="xs:string" form="Attribute" localName="agr_num1"/>
+		<property name="ДатаСоглашения" type="xs:dateTime" form="Attribute" localName="agr_date1"/>
+	</objectType>
+	<objectType name="ТипДвижениеДенег">
+		<property name="Дата" type="xs:dateTime" form="Attribute" localName="debt_type4"/>
+		<property name="Сумма" type="xs:decimal" form="Attribute" localName="debt_date4"/>
+		<property name="Валюта" type="xs:string" form="Attribute" localName="decree_amount2"/>
+		<property xmlns:d3p1="report577p_v1" name="Операция" type="d3p1:ТипОперацииДвиженияДенег" form="Attribute" localName="operation_type"/>
+		<property name="Комментарий" type="xs:string" form="Attribute" localName="notes1"/>
+	</objectType>
+	<objectType name="ТипСписокДвиженийДенег">
+		<property xmlns:d3p1="report577p_v1" name="ДвижениеДенег" type="d3p1:ТипДвижениеДенег" lowerBound="0" upperBound="-1" localName="Подробности16"/>
+	</objectType>
 </package>

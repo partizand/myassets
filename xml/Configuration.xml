@@ -138,8 +138,9 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>Учет</Subsystem>
 			<Subsystem>ФондовыйРынок</Subsystem>
-			<Subsystem>НСИ</Subsystem>
+			<Subsystem>Справочники</Subsystem>
 			<Subsystem>Сервис</Subsystem>
 			<CommonTemplate>Макет</CommonTemplate>
 			<CommonTemplate>Макет1</CommonTemplate>
@@ -149,16 +150,21 @@
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ЗагрузкаДанных</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
+			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
+			<CommonModule>РаботаСФормамиВызовСервера</CommonModule>
 			<XDTOPackage>ПакетXDTO1</XDTOPackage>
 			<XDTOPackage>ПакетXDTO3</XDTOPackage>
 			<XDTOPackage>ПакетXDTOОтчетВТБ</XDTOPackage>
 			<CommonCommand>Облигации</CommonCommand>
 			<Constant>КоличествоЗаписейВПорцииЗагрузки</Constant>
+			<Constant>ВалютаУчета</Constant>
 			<Catalog>ЦенныеБумаги</Catalog>
 			<Catalog>Эмитенты</Catalog>
 			<Catalog>Валюты</Catalog>
 			<Catalog>Брокеры</Catalog>
 			<Catalog>БрокерскиеСчета</Catalog>
+			<Catalog>Субконто</Catalog>
+			<Catalog>ВидыСчетов</Catalog>
 			<Document>ПокупкаЦеннойБумаги</Document>
 			<Document>ПродажаЦеннойБумаги</Document>
 			<Document>ПоступлениеДенежныхСредств</Document>
@@ -167,6 +173,7 @@
 			<Document>ПогашениеОблигаций</Document>
 			<Document>ВыплатаДивидендов</Document>
 			<Document>ВыплатаКупона</Document>
+			<Document>ДвижениеСредств</Document>
 			<Sequence>ЗагрузкаОтчетов</Sequence>
 			<Enum>ТипыОблигаций</Enum>
 			<Enum>ТипыАкций</Enum>
@@ -174,15 +181,18 @@
 			<Enum>ТипыКупонов</Enum>
 			<Enum>ВидыБазовыхСтавок</Enum>
 			<Enum>ТипОферты</Enum>
-			<Enum>НаправлениеСделки</Enum>
+			<Enum>ВидыАктивов</Enum>
+			<Enum>ВидыСчетов</Enum>
 			<Report>ДоходностиОФЗПД</Report>
 			<Report>ОФЗПеременныйКупон</Report>
 			<Report>ПортфельЦенныхБумаг</Report>
 			<Report>РеестрСделок</Report>
+			<Report>ОстаткиНаСчетах</Report>
 			<DataProcessor>ЗагрузкаЦБ</DataProcessor>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
 			<DataProcessor>ЗагрузкаОтчетаВТБ</DataProcessor>
 			<DataProcessor>ВыгрузкаЗагрузкаДанныхXML</DataProcessor>
+			<DataProcessor>ЗагрузкаДанныхСМосбиржи</DataProcessor>
 			<InformationRegister>Котировки</InformationRegister>
 			<InformationRegister>КупоныОблигаций</InformationRegister>
 			<InformationRegister>ДоходностиОблигаций</InformationRegister>
@@ -195,6 +205,9 @@
 			<AccumulationRegister>Выплаты</AccumulationRegister>
 			<AccumulationRegister>Продажи</AccumulationRegister>
 			<AccumulationRegister>НалогСКупона</AccumulationRegister>
+			<ChartOfCharacteristicTypes>ВидыСубконто</ChartOfCharacteristicTypes>
+			<ChartOfAccounts>Личный</ChartOfAccounts>
+			<AccountingRegister>Личный</AccountingRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

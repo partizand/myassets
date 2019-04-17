@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Описание" id="72">
+			<DataPath>Объект.Описание</DataPath>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="73"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="74"/>
+		</InputField>
+		<InputField name="СчетКт" id="10">
+			<DataPath>Объект.СчетКт</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СчетКтКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СчетКтРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">СчетКтПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="СчетДт" id="7">
+			<DataPath>Объект.СчетДт</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СчетДтКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СчетДтРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Сумма" id="13">
+			<DataPath>Объект.Сумма</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="СуммаВал" id="16">
+			<DataPath>Объект.СуммаВал</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаВалКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СуммаВалРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Курс" id="19">
+			<DataPath>Объект.Курс</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КурсКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<Pages name="Страницы" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<Page name="ГруппаСубконтоКт" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Субконто кт</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаСубконтоКтРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<Table name="СубконтоКт" id="50">
+							<Representation>List</Representation>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СубконтоКт</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СубконтоКтКонтекстноеМеню" id="51"/>
+							<AutoCommandBar name="СубконтоКтКоманднаяПанель" id="52"/>
+							<ExtendedTooltip name="СубконтоКтРасширеннаяПодсказка" id="53"/>
+							<SearchStringAddition name="СубконтоКтСтрокаПоиска" id="54">
+								<AdditionSource>
+									<Item>СубконтоКт</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СубконтоКтСтрокаПоискаКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="СубконтоКтСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СубконтоКтСостояниеПросмотра" id="57">
+								<AdditionSource>
+									<Item>СубконтоКт</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СубконтоКтСостояниеПросмотраКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="СубконтоКтСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СубконтоКтУправлениеПоиском" id="60">
+								<AdditionSource>
+									<Item>СубконтоКт</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СубконтоКтУправлениеПоискомКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="СубконтоКтУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СубконтоКтНомерСтроки" id="63">
+									<DataPath>Объект.СубконтоКт.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СубконтоКтНомерСтрокиКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="СубконтоКтНомерСтрокиРасширеннаяПодсказка" id="65"/>
+								</LabelField>
+								<InputField name="СубконтоКтВид" id="66">
+									<DataPath>Объект.СубконтоКт.Вид</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СубконтоКтВидКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="СубконтоКтВидРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="СубконтоКтЗначение" id="69">
+									<DataPath>Объект.СубконтоКт.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СубконтоКтЗначениеКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="СубконтоКтЗначениеРасширеннаяПодсказка" id="71"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСубконтоДт" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Субконто дт</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаСубконтоДтРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<Table name="СубконтоДт" id="26">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СубконтоДт</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СубконтоДтКонтекстноеМеню" id="27"/>
+							<AutoCommandBar name="СубконтоДтКоманднаяПанель" id="28"/>
+							<ExtendedTooltip name="СубконтоДтРасширеннаяПодсказка" id="29"/>
+							<SearchStringAddition name="СубконтоДтСтрокаПоиска" id="30">
+								<AdditionSource>
+									<Item>СубконтоДт</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СубконтоДтСтрокаПоискаКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="СубконтоДтСтрокаПоискаРасширеннаяПодсказка" id="32"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СубконтоДтСостояниеПросмотра" id="33">
+								<AdditionSource>
+									<Item>СубконтоДт</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СубконтоДтСостояниеПросмотраКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="СубконтоДтСостояниеПросмотраРасширеннаяПодсказка" id="35"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СубконтоДтУправлениеПоиском" id="36">
+								<AdditionSource>
+									<Item>СубконтоДт</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СубконтоДтУправлениеПоискомКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="СубконтоДтУправлениеПоискомРасширеннаяПодсказка" id="38"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СубконтоДтНомерСтроки" id="39">
+									<DataPath>Объект.СубконтоДт.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СубконтоДтНомерСтрокиКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="СубконтоДтНомерСтрокиРасширеннаяПодсказка" id="41"/>
+								</LabelField>
+								<InputField name="СубконтоДтВид" id="42">
+									<DataPath>Объект.СубконтоДт.Вид</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СубконтоДтВидКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="СубконтоДтВидРасширеннаяПодсказка" id="44"/>
+								</InputField>
+								<InputField name="СубконтоДтЗначение" id="45">
+									<DataPath>Объект.СубконтоДт.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СубконтоДтЗначениеКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="СубконтоДтЗначениеРасширеннаяПодсказка" id="47"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ДвижениеСредств</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccountingRegister.Личный.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

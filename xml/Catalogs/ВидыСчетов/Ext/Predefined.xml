@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.7">
+	<Item id="b89e4706-e5b3-4b04-bd1b-1cde27e148b8">
+		<Name>Активы</Name>
+		<Code>000000001</Code>
+		<Description>Активы</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="868163c7-eba6-44bc-9682-f5919d64171e">
+				<Name>Банк</Name>
+				<Code>000000003</Code>
+				<Description>Банк</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b65e3aec-20c8-4988-8876-5157bdbbe844">
+				<Name>БрокерскийСчет</Name>
+				<Code>000000007</Code>
+				<Description>Брокерский счет</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4b1ef5dd-3f98-48d9-a83e-2715abb59f69">
+				<Name>Наличные</Name>
+				<Code>000000002</Code>
+				<Description>Наличные</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="21aa1d9f-6ffc-4f03-b007-6dc1713fb2c3">
+		<Name>Долг</Name>
+		<Code>000000004</Code>
+		<Description>Долг</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="59812cb7-571f-4e12-9670-a303b71ca7fd">
+		<Name>Доходы</Name>
+		<Code>000000005</Code>
+		<Description>Доходы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f0531e66-8389-4c67-b495-6d31c8a7df8e">
+		<Name>Расходы</Name>
+		<Code>000000006</Code>
+		<Description>Расходы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Родитель" id="4">
+			<DataPath>Объект.Parent</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Родительский счет</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ВидСчета" id="7">
+			<DataPath>Объект.ВидСчета</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидСчетаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВидСчетаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Валюта" id="10">
+			<DataPath>Объект.Валюта</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВалютаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Вид" id="35">
+			<DataPath>Объект.Type</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ВидКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<CheckBoxField name="Валютный" id="13">
+			<DataPath>Объект.Валютный</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВалютныйКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВалютныйРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<Table name="ВидыСубконто" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ExtDimensionTypes</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВидыСубконтоКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="ВидыСубконтоКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="ВидыСубконтоРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="ВидыСубконтоСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>ВидыСубконто</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыСубконтоСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ВидыСубконтоСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВидыСубконтоСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>ВидыСубконто</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыСубконтоСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ВидыСубконтоСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВидыСубконтоУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>ВидыСубконто</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыСубконтоУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ВидыСубконтоУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ВидыСубконтоВидСубконто" id="29">
+					<DataPath>Объект.ExtDimensionTypes.ExtDimensionType</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидыСубконтоВидСубконтоКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ВидыСубконтоВидСубконтоРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<CheckBoxField name="ВидыСубконтоТолькоОбороты" id="32">
+					<DataPath>Объект.ExtDimensionTypes.TurnoversOnly</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВидыСубконтоТолькоОборотыКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ВидыСубконтоТолькоОборотыРасширеннаяПодсказка" id="34"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ChartOfAccountsObject.Личный</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -24,6 +24,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НалогСКупона</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаОтчетаВТБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Sequence.ЗагрузкаОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДанныхСМосбиржи</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

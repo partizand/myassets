@@ -28,11 +28,11 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>МоиФинансы</Name>
+			<Name>МоиАктивы</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Мои финансы</v8:content>
+					<v8:content>Мои активы</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>Учет личных финансов</Comment>
@@ -167,7 +167,7 @@
 			<Catalog>ВидыСчетов</Catalog>
 			<Document>ПокупкаЦеннойБумаги</Document>
 			<Document>ПродажаЦеннойБумаги</Document>
-			<Document>ПоступлениеДенежныхСредств</Document>
+			<Document>ПоступлениеСредствНаБрокерскийСчет</Document>
 			<Document>ВыводДенежныхСредств</Document>
 			<Document>ДепозитарнаяКомиссия</Document>
 			<Document>ПогашениеОблигаций</Document>
@@ -200,6 +200,7 @@
 			<InformationRegister>СведенияОбОблигациях</InformationRegister>
 			<InformationRegister>ОфертыОблигаций</InformationRegister>
 			<InformationRegister>ЗагрузкаБумаг</InformationRegister>
+			<InformationRegister>КурсыВалют</InformationRegister>
 			<AccumulationRegister>ОстаткиЦенныхБумаг</AccumulationRegister>
 			<AccumulationRegister>ОстаткиДенежныхСредств</AccumulationRegister>
 			<AccumulationRegister>Выплаты</AccumulationRegister>

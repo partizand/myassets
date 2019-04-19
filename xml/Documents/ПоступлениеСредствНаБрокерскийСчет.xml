@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
-	<Document uuid="a417f7df-35ed-4e3f-b8a8-40fc3db8bd96">
+	<Document uuid="d900fa32-eb5a-42d9-81cc-03026c04b8c2">
 		<InternalInfo>
-			<xr:GeneratedType name="DocumentObject.ДвижениеСредств" category="Object">
-				<xr:TypeId>6798353f-64dc-40e1-939e-2621707ccd78</xr:TypeId>
-				<xr:ValueId>fcc4b6ac-fd1f-4a8d-9f0d-215a7b3f149e</xr:ValueId>
+			<xr:GeneratedType name="DocumentObject.ПоступлениеСредствНаБрокерскийСчет" category="Object">
+				<xr:TypeId>85945ab4-2700-41e9-8701-64e36f4c76eb</xr:TypeId>
+				<xr:ValueId>dd5eb46c-9c3c-4335-a1ba-2e920232d5aa</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentRef.ДвижениеСредств" category="Ref">
-				<xr:TypeId>5e275d78-dc73-4b40-bfd0-ef753833c642</xr:TypeId>
-				<xr:ValueId>8eed638d-70ab-4e60-8089-14d37d83d527</xr:ValueId>
+			<xr:GeneratedType name="DocumentRef.ПоступлениеСредствНаБрокерскийСчет" category="Ref">
+				<xr:TypeId>ca6e6718-aaf0-4f1f-a0fc-9219a307954c</xr:TypeId>
+				<xr:ValueId>a05370d4-ef1e-4220-a283-fedd2011b886</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentSelection.ДвижениеСредств" category="Selection">
-				<xr:TypeId>b343c8f1-f9ac-4b1a-bc8d-78a3359a87ce</xr:TypeId>
-				<xr:ValueId>309b6b6d-3f5a-498f-b5f4-010010ce7f2a</xr:ValueId>
+			<xr:GeneratedType name="DocumentSelection.ПоступлениеСредствНаБрокерскийСчет" category="Selection">
+				<xr:TypeId>3008a32e-024b-46ea-94fa-0e1569d1a093</xr:TypeId>
+				<xr:ValueId>e498d026-bf58-4111-9fc4-d2f62b18e2bd</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentList.ДвижениеСредств" category="List">
-				<xr:TypeId>1423617a-294a-4d50-86ab-eacb36c6f520</xr:TypeId>
-				<xr:ValueId>dede1eea-cf01-4cfc-8c8a-a6b7a3ce94d1</xr:ValueId>
+			<xr:GeneratedType name="DocumentList.ПоступлениеСредствНаБрокерскийСчет" category="List">
+				<xr:TypeId>651bc708-31a9-43bb-96a3-1d4c3092b603</xr:TypeId>
+				<xr:ValueId>6a65076d-e412-47c4-a321-bc7868828f4a</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentManager.ДвижениеСредств" category="Manager">
-				<xr:TypeId>cc7326c3-8b4f-4ed4-88d3-be4ebfb21c75</xr:TypeId>
-				<xr:ValueId>7300260e-cf34-4e09-a683-30120ee02558</xr:ValueId>
+			<xr:GeneratedType name="DocumentManager.ПоступлениеСредствНаБрокерскийСчет" category="Manager">
+				<xr:TypeId>23907abc-2389-449f-aa52-24cf34c0f403</xr:TypeId>
+				<xr:ValueId>0cfefbec-979e-4d9c-8929-30e1fcee048b</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ДвижениеСредств</Name>
+			<Name>ПоступлениеСредствНаБрокерскийСчет</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Движение средств</v8:content>
+					<v8:content>Поступление средств на брокерский счет</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -43,13 +43,13 @@
 			<Characteristics/>
 			<BasedOn/>
 			<InputByString>
-				<xr:Field>Document.ДвижениеСредств.StandardAttribute.Number</xr:Field>
+				<xr:Field>Document.ПоступлениеСредствНаБрокерскийСчет.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<CreateOnInput>Use</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Document.ДвижениеСредств.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultObjectForm/>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -61,7 +61,7 @@
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
-				<xr:Item xsi:type="xr:MDObjectRef">AccountingRegister.Личный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОстаткиДенежныхСредств</xr:Item>
 			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
 			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
@@ -78,22 +78,18 @@
 			<DataHistory>DontUse</DataHistory>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="833c2692-5e98-458d-aae3-f15b9015630a">
+			<Attribute uuid="7a562e4a-5c1c-4dc4-b160-89ac63ffa631">
 				<Properties>
-					<Name>Описание</Name>
+					<Name>БрокерскийСчет</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Описание</v8:content>
+							<v8:content>Брокерский счет</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>200</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:Type>cfg:CatalogRef.БрокерскиеСчета</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -106,7 +102,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
+					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -121,85 +117,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="2ff47807-36cd-4c29-a9bf-0c32e6d13ef1">
-				<Properties>
-					<Name>СчетКт</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Счет кт</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:ChartOfAccountsRef.Личный</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="8e828bbc-3e35-452c-9c5a-db4fb46e414a">
-				<Properties>
-					<Name>СчетДт</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Счет дт</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:ChartOfAccountsRef.Личный</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="fa978de9-d51c-4216-83c1-b6efe0d061bd">
+			<Attribute uuid="1d2c2c4a-3bda-4c57-87b2-79fa625f7b56">
 				<Properties>
 					<Name>Сумма</Name>
 					<Synonym>
@@ -229,7 +147,7 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
+					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -243,23 +161,18 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="c9cca282-24c8-474e-9bcc-5c670926a8ce">
+			<Attribute uuid="31ff4f85-c08b-4a5b-b7c3-8a4a74b22bda">
 				<Properties>
-					<Name>СуммаВал</Name>
+					<Name>СчетКт</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сумма вал</v8:content>
+							<v8:content>Счет кт</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>10</v8:Digits>
-							<v8:FractionDigits>2</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
+						<v8:Type>cfg:ChartOfAccountsRef.Личный</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -287,68 +200,23 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="3172f4ac-7880-47ea-8aab-487f98a70feb">
-				<Properties>
-					<Name>Курс</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Курс</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>10</v8:Digits>
-							<v8:FractionDigits>3</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Form>ФормаДокумента</Form>
-			<TabularSection uuid="d9f94d8e-3f0f-4fa7-9c20-71b51518042e">
+			<TabularSection uuid="834ad603-f97d-40d6-8cc2-4cb162ec2c75">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.ДвижениеСредств.СубконтоДт" category="TabularSection">
-						<xr:TypeId>6435289c-17ea-4ece-866b-0e28f6d64fad</xr:TypeId>
-						<xr:ValueId>a957fa3d-5619-4491-a906-ebe5716351dd</xr:ValueId>
+					<xr:GeneratedType name="DocumentTabularSection.ПоступлениеСредствНаБрокерскийСчет.СубконтоКт" category="TabularSection">
+						<xr:TypeId>dee59a1e-26ec-4920-aa82-42a93e2b245d</xr:TypeId>
+						<xr:ValueId>17146732-aa62-42ea-ada0-204310290d34</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.ДвижениеСредств.СубконтоДт" category="TabularSectionRow">
-						<xr:TypeId>c98e639e-cd65-4fff-b257-923355e84a74</xr:TypeId>
-						<xr:ValueId>408136be-c45c-4a66-9164-70363cae41d9</xr:ValueId>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПоступлениеСредствНаБрокерскийСчет.СубконтоКт" category="TabularSectionRow">
+						<xr:TypeId>942a9c1c-a995-4217-baa8-e234c54be97f</xr:TypeId>
+						<xr:ValueId>2c968161-715a-43e8-9bf5-c41bf2922221</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>СубконтоДт</Name>
+					<Name>СубконтоКт</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Субконто дт</v8:content>
+							<v8:content>Субконто кт</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -356,7 +224,7 @@
 					<FillChecking>DontCheck</FillChecking>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="84add715-1f3a-4431-8fe2-c467644b3258">
+					<Attribute uuid="9a35ae3a-ccb9-48fb-8c29-b2d11ff7413b">
 						<Properties>
 							<Name>Вид</Name>
 							<Synonym>
@@ -393,7 +261,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="c1db218a-467a-4cfa-96bf-a5f075a86091">
+					<Attribute uuid="7d9d25f8-8003-4da5-b316-dc26c64630da">
 						<Properties>
 							<Name>Значение</Name>
 							<Synonym>
@@ -416,17 +284,14 @@
 							<ExtendedEdit>false</ExtendedEdit>
 							<MinValue xsi:nil="true"/>
 							<MaxValue xsi:nil="true"/>
-							<FillChecking>ShowError</FillChecking>
+							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
 							<ChoiceParameters/>
 							<QuickChoice>Auto</QuickChoice>
 							<CreateOnInput>Auto</CreateOnInput>
 							<ChoiceForm/>
-							<LinkByType>
-								<xr:DataPath>Document.ДвижениеСредств.TabularSection.СубконтоДт.Attribute.Вид</xr:DataPath>
-								<xr:LinkItem>0</xr:LinkItem>
-							</LinkByType>
+							<LinkByType/>
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 							<Indexing>DontIndex</Indexing>
 							<FullTextSearch>Use</FullTextSearch>
@@ -435,23 +300,23 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<TabularSection uuid="ad7362f8-a6fc-4d92-8c32-999a3f302935">
+			<TabularSection uuid="aacc9f1d-9cc8-428f-a737-eb93a198e3ef">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.ДвижениеСредств.СубконтоКт" category="TabularSection">
-						<xr:TypeId>f90f4086-d5b9-442f-8022-0ed2e223a57f</xr:TypeId>
-						<xr:ValueId>7b5aeaf7-47de-43be-8ed0-918c7a290adf</xr:ValueId>
+					<xr:GeneratedType name="DocumentTabularSection.ПоступлениеСредствНаБрокерскийСчет.СубконтоДт" category="TabularSection">
+						<xr:TypeId>7477722b-3f6a-4862-94cd-eb9d47d8429f</xr:TypeId>
+						<xr:ValueId>e15074e9-39c7-436a-8b6c-697ea287e7da</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.ДвижениеСредств.СубконтоКт" category="TabularSectionRow">
-						<xr:TypeId>a5a54c07-cb12-408a-8a22-596c1f2a042d</xr:TypeId>
-						<xr:ValueId>a563902c-94de-4cc2-b599-ec5510547468</xr:ValueId>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПоступлениеСредствНаБрокерскийСчет.СубконтоДт" category="TabularSectionRow">
+						<xr:TypeId>84ed450b-2957-46f7-8dab-9e200b5075d0</xr:TypeId>
+						<xr:ValueId>7c20d589-4a76-429e-8573-1e08b9c1b422</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>СубконтоКт</Name>
+					<Name>СубконтоДт</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Субконто кт</v8:content>
+							<v8:content>Субконто дт</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -487,7 +352,7 @@
 					</StandardAttributes>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="cdf8a04c-c367-408a-866a-bf52c7f03eb7">
+					<Attribute uuid="1cbbfd23-a601-4daa-acc5-188be0f98900">
 						<Properties>
 							<Name>Вид</Name>
 							<Synonym>
@@ -524,7 +389,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="687de82a-643b-4204-b8b8-92548175150c">
+					<Attribute uuid="459cce71-ce3c-4651-8258-0014ca43055e">
 						<Properties>
 							<Name>Значение</Name>
 							<Synonym>
@@ -547,17 +412,14 @@
 							<ExtendedEdit>false</ExtendedEdit>
 							<MinValue xsi:nil="true"/>
 							<MaxValue xsi:nil="true"/>
-							<FillChecking>ShowError</FillChecking>
+							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
 							<ChoiceParameters/>
 							<QuickChoice>Auto</QuickChoice>
 							<CreateOnInput>Auto</CreateOnInput>
 							<ChoiceForm/>
-							<LinkByType>
-								<xr:DataPath>Document.ДвижениеСредств.TabularSection.СубконтоКт.Attribute.Вид</xr:DataPath>
-								<xr:LinkItem>0</xr:LinkItem>
-							</LinkByType>
+							<LinkByType/>
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 							<Indexing>DontIndex</Indexing>
 							<FullTextSearch>Use</FullTextSearch>

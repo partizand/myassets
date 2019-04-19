@@ -15,14 +15,12 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">ChartOfAccounts.Личный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">AccountingRegister.Личный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ДвижениеСредств</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.ВидыСубконто</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Субконто</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОстаткиНаСчетах</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>Операции</Subsystem>
+			<Subsystem>Справочники</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

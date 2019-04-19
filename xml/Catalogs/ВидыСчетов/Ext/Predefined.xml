@@ -38,6 +38,12 @@
 		<Description>Доходы</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="dda846ac-c53f-4580-9b46-9bec1e45809f">
+		<Name>КурсовыеРазницы</Name>
+		<Code>000000008</Code>
+		<Description>Курсовые разницы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 	<Item id="f0531e66-8389-4c67-b495-6d31c8a7df8e">
 		<Name>Расходы</Name>
 		<Code>000000006</Code>

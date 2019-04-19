@@ -73,12 +73,12 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаУсловие</dataPath>
-			<field>СуммаУсловие</field>
+			<dataPath>СуммаВал</dataPath>
+			<field>СуммаВал</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма условие</v8:content>
+					<v8:content>Сумма вал</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -90,7 +90,6 @@
 	Личный.ВидСчета КАК ВидСчета,
 	Личный.Валюта КАК Валюта,
 	Личный.Валютный КАК Валютный,
-	ЛичныйОстатки.СуммаОстаток КАК Сумма,
 	ЛичныйОстатки.СуммаОстатокДт КАК СуммаОстатокДт,
 	ЛичныйОстатки.СуммаОстатокКт КАК СуммаОстатокКт,
 	ВЫБОР
@@ -99,12 +98,25 @@
 		КОГДА Личный.Вид = &amp;Пассивный
 			ТОГДА ЛичныйОстатки.СуммаОстатокКт
 		ИНАЧЕ ЛичныйОстатки.СуммаОстаток
-	КОНЕЦ КАК СуммаУсловие
+	КОНЕЦ КАК Сумма,
+	ВЫБОР
+		КОГДА Личный.Вид = &amp;Активный
+				И Личный.Валютный
+			ТОГДА ЛичныйОстатки.СуммаВалОстатокДт
+		КОГДА Личный.Вид = &amp;Пассивный
+				И Личный.Валютный
+			ТОГДА ЛичныйОстатки.СуммаВалОстатокКт
+		ИНАЧЕ 0
+	КОНЕЦ КАК СуммаВал
 ИЗ
 	РегистрБухгалтерии.Личный.Остатки КАК ЛичныйОстатки
 		ЛЕВОЕ СОЕДИНЕНИЕ ПланСчетов.Личный КАК Личный
 		ПО ЛичныйОстатки.Счет = Личный.Ссылка</query>
 	</dataSet>
+	<totalField>
+		<dataPath>Сумма</dataPath>
+		<expression>Сумма(Сумма)</expression>
+	</totalField>
 	<parameter>
 		<name>Период</name>
 		<title xsi:type="v8:LocalStringType">
@@ -159,22 +171,19 @@
 					<dcsset:field>Счет</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Сумма</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Валюта</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаОстатокДт</dcsset:field>
+					<dcsset:field>СуммаВал</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма валюты</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаОстатокКт</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаУсловие</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Вид</dcsset:field>
+					<dcsset:field>Сумма</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
@@ -187,8 +196,12 @@
 			</dcsset:dataParameters>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Арктика</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
-					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Together</dcscor:value>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">SeparatelyAndInTotalsOnly</dcscor:value>
 				</dcscor:item>
 			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">

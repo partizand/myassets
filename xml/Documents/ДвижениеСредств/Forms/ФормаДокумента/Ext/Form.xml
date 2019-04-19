@@ -4,57 +4,222 @@
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
-		<InputField name="Номер" id="1">
-			<DataPath>Объект.Number</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
-		</InputField>
-		<InputField name="Дата" id="4">
-			<DataPath>Объект.Date</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
-		</InputField>
+		<UsualGroup name="ГруппаНомерДата" id="97">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="98"/>
+			<ChildItems>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="Описание" id="72">
 			<DataPath>Объект.Описание</DataPath>
 			<ContextMenu name="ОписаниеКонтекстноеМеню" id="73"/>
 			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="74"/>
 		</InputField>
-		<InputField name="СчетКт" id="10">
-			<DataPath>Объект.СчетКт</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="СчетКтКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="СчетКтРасширеннаяПодсказка" id="12"/>
-			<Events>
-				<Event name="OnChange">СчетКтПриИзменении</Event>
-			</Events>
-		</InputField>
-		<InputField name="СчетДт" id="7">
-			<DataPath>Объект.СчетДт</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="СчетДтКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="СчетДтРасширеннаяПодсказка" id="9"/>
-		</InputField>
-		<InputField name="Сумма" id="13">
-			<DataPath>Объект.Сумма</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="СуммаКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="15"/>
-		</InputField>
-		<InputField name="СуммаВал" id="16">
-			<DataPath>Объект.СуммаВал</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="СуммаВалКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="СуммаВалРасширеннаяПодсказка" id="18"/>
-		</InputField>
-		<InputField name="Курс" id="19">
-			<DataPath>Объект.Курс</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="КурсКонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="21"/>
-		</InputField>
+		<UsualGroup name="ГруппаСчетКт" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа счет кт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа счет кт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСчетКтРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<InputField name="СчетКт" id="10">
+					<DataPath>Объект.СчетКт</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет источник</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СчетКтКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СчетКтРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">СчетКтПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelField name="СчетКтВалюта" id="75">
+					<DataPath>Объект.СчетКт.Валюта</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="СчетКтВалютаКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="СчетКтВалютаРасширеннаяПодсказка" id="77"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСчетДт" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа счет дт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа счет дт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСчетДтРасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<InputField name="СчетДт" id="7">
+					<DataPath>Объект.СчетДт</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет приемник</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СчетДтКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СчетДтРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">СчетДтПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelField name="СчетДтВалюта" id="82">
+					<DataPath>Объект.СчетДт.Валюта</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="СчетДтВалютаКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="СчетДтВалютаРасширеннаяПодсказка" id="84"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСумма" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сумма</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сумма</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСуммаРасширеннаяПодсказка" id="86"/>
+			<ChildItems>
+				<InputField name="Сумма" id="13">
+					<DataPath>Объект.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СуммаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<LabelField name="СчетКтВалюта1" id="87">
+					<DataPath>Объект.СчетКт.Валюта</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="СчетКтВалюта1КонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="СчетКтВалюта1РасширеннаяПодсказка" id="89"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОбмен" id="90">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обмен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обмен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОбменРасширеннаяПодсказка" id="91"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСуммаВал" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сумма вал</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сумма вал</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСуммаВалРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<InputField name="СуммаВал" id="16">
+							<DataPath>Объект.СуммаВал</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма приемника</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СуммаВалКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="СуммаВалРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">СуммаВалПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelField name="СчетДтВалюта1" id="94">
+							<DataPath>Объект.СчетДт.Валюта</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="СчетДтВалюта1КонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="СчетДтВалюта1РасширеннаяПодсказка" id="96"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelField name="Курс" id="19">
+					<DataPath>Объект.Курс</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КурсКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
 		<Pages name="Страницы" id="22">
 			<Title>
 				<v8:item>
@@ -68,7 +233,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Субконто кт</v8:content>
+							<v8:content>Аналитика источника</v8:content>
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="ГруппаСубконтоКтРасширеннаяПодсказка" id="49"/>
@@ -141,17 +306,24 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Субконто дт</v8:content>
+							<v8:content>Аналитика приемника</v8:content>
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="ГруппаСубконтоДтРасширеннаяПодсказка" id="25"/>
 					<ChildItems>
 						<Table name="СубконтоДт" id="26">
 							<Representation>List</Representation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>Объект.СубконтоДт</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+							</CommandSet>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="СубконтоДтКонтекстноеМеню" id="27"/>
 							<AutoCommandBar name="СубконтоДтКоманднаяПанель" id="28"/>
